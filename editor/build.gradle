@@ -1,0 +1,11 @@
+jar {
+    archiveBaseName = 'bfsr-editor'
+    archiveVersion = '0.0.1-SNAPSHOT'
+}
+
+dependencies {
+    implementation project(':game-logic:client')
+
+    annotationProcessor "org.mapstruct:mapstruct-processor:1.5.4.Final", "org.projectlombok:lombok-mapstruct-binding:0.2.0"
+    testAnnotationProcessor "org.mapstruct:mapstruct-processor:1.5.4.Final"
+}
